@@ -1,0 +1,68 @@
+this contains header,body(which contains some boxes) and footer
+
+
+
+html //code
+<header>
+        <div>
+            <a id="amazon" href="#">Amazon</a>
+            <a id="account" href="#">Account</a>
+            <a id="mycart" href="#">My Cart</a>
+            <a id="contactus" href="#">Contact Us</a>
+            <input placeholder="search amazon.in"">
+            <button>Search</button>
+        </div>
+    </header>
+    
+    <div id="content">
+        <div class="contentbox" style="background-color: rgba(255,0,0,0.5);">but soap</div>
+        <div class="contentbox" style="background-color: rgba(0,255,0,0.5);">buy phone</div>
+        <div class="contentbox" style="background-color: rgba(0,0,255,0.5);">buy akjdjfk</div>
+    </div>
+    <footer>© 1996-2024, Amazon.com, Inc. or its affiliates</footer>
+
+
+
+css
+//code
+*{
+    margin: 0px;
+    padding: 0px;
+    color:white;
+}
+
+header div{
+    height: 60px;
+    background-color: #0f1111;
+}
+
+#amazon{
+    color: orange;
+    font-size: 25px;
+    text-decoration: none;
+}
+
+button{
+    background-color: #f08804;
+}
+
+a{
+    margin-right: 200px;
+}
+
+#content{
+    height: 726px;
+}
+
+.contentbox{
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    display: inline-block;
+}
+
+footer{
+    background-color: #131A22;
+    text-align: center;
+    padding: 10px;
+}

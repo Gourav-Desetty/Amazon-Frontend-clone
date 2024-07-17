@@ -1,0 +1,39 @@
+html inside body
+//code
+<div id="navbar">
+        <a id="logo" href="#">Amazon</a>
+        <a id="account" href="#">Account</a>
+        <a id="mycart" href="#">My Cart</a>
+        <a id="Contactus" href="#">Contact Us</a>
+
+        <input placeholder="search Amazon.in">
+        <button>Search</button>
+    </div>
+
+
+css 
+//code
+*{
+    padding: 0px;
+    margin: 0px;
+    color: white;
+}
+
+#navbar{
+    height:60px;
+    background-color: #0f1111;
+}
+
+#logo{
+    color:orange;
+    font-size: 25px;
+}
+
+button{
+    background-color: #f08804;
+}
+
+a{
+    margin-right: 200px;
+    text-decoration: none;
+}

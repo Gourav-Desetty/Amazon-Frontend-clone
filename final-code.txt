@@ -1,0 +1,393 @@
+html 
+//code
+
+<header>
+        <div class="navbar">
+
+            <div class="nav-logo border">
+                <div class="logo"></div>
+            </div>
+
+            <div class="nav-address border">
+                <p class="add-first">Deliver to</p>
+                <div class="add-icon">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p class="add-sec">India</p>
+                </div>
+            </div>
+
+            <div class="nav-search">
+                <select style="color: black;" class="search-select">
+                    <option>All</option>
+                </select>
+                <input placeholder="Search Amazon" class="search-input">
+                <div class="search-icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+
+           <div class="nav-signin border">
+                <p class="signin-first">Hello, sign in</p>
+                <p class="signin-sec">Accounts & Lists</p>
+           </div>
+
+           <div class="orders border">
+            <p class="signin-first">Returns</p>
+            <p class="signin-sec">& Orders</p>
+           </div>
+
+           <div class="nav-cart border">
+                <div class="cart-logo"><i class="fa-solid fa-cart-arrow-down"></i></div>
+                <div class="cart-text">Cart</div>
+           </div>
+        </div>
+
+        <div class="panel">
+
+            <div class="panel-all">
+                <i class="fa-solid fa-bars"></i>
+                All
+            </div>
+
+            <div class="panel-ops">
+                <p>Today's Deals</p>
+                <p>Customer Service</p>
+                <p>Registry</p>
+                <p>Gift Cards</p>
+                <p>Sell</p>
+            </div>
+
+            <div class="panel-deals">
+                Shop deals in Electronics
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-section">
+        <div class="hero-msg ">
+            <p style="color: black;">You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#" class="t-d">Click here to go to amazon.in </a></p>
+        </div>
+    </div>
+
+    <div class="shop-section">
+        <div class="box1">
+            <h2>Gaming accessories</h2>
+            <div class="b1 box">
+                <img src="headsets.jpg" alt="">
+                <img src="keyboard.jpg" alt="">
+            </div>
+            <div class="b2 box">
+                <img src="mouse.jpg" alt="">
+                <img src="chair.jpg" alt="">
+            </div>
+            <div class="Seemore t-d">See more</div>
+        </div>
+        <div class="box2">
+            <h2>Shop deals in Fashion</h2>
+            <div class="b1 box">
+                <img src="c1.jpg" alt="">
+                <img src="c2.jpg" alt="">
+            </div>
+            <div class="b2 box">
+                <img src="c3.jpg" alt="">
+                <img src="c4.jpg" alt="">
+            </div>
+            <div class="Seemore t-d">See all deals</div>
+        </div>
+        <div class="box3">
+            <h2>Deals in PCs</h2>
+            <div class="cpu"><img src="cpu.jpg" alt="" class="cpu-img"></div>
+            <div class="Seemore t-d">Shop now</div>
+        </div>
+        <div class="box4">
+            <h2>Refesh your space</h2>
+            <div class="b1 box">
+                <img src="i1.jpg" alt="">
+                <img src="i2.jpg" alt="">
+            </div>
+            <div class="b2 box">
+                <img src="i3.jpg" alt="">
+                <img src="i4.jpg" alt="">
+            </div>
+            <div class="Seemore t-d">See more</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+css
+//code
+*{
+    margin: 0px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    height: 60px;
+    background-color: #131921;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo{
+    height: 50px;
+    width: 100%;
+    background-image: url(amazon\ logo.png);
+    background-size: cover;
+}
+
+.nav-logo{
+    height: 50px;
+    width: 100px;
+}
+
+.border{
+    border: 1.5px solid transparent;
+}
+
+.border:hover{
+    border: 1.5px solid white;
+}
+
+.nav-address{
+    margin-left: 10px;
+}
+
+.add-first{
+    font-size: 0.7rem;
+    color: #CCCCCC;
+    margin-left: 15px;
+}
+
+.add-sec{
+    font-size: 1rem;
+    color: #FFFFFF;
+    margin-left: 3px;
+    font-weight: 700;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
+
+.nav-search{
+    width: 938px;
+    height: 40px;
+    display: flex;
+    /* background-color: pink; */
+    align-items: center;
+    margin-left: 25px;
+    /* border-radius: 5px; */
+}
+
+.search-icon{
+    background-color: #f3a847;
+    width: 45px;
+    height: 38px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    font-size: 22px;
+}
+
+.search-select{
+    width: 45px;
+    height: 38px;
+    text-align: center;
+    background-color: #d4d4d4;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.search-input{
+    width: 840px;
+    height: 33px;
+    color: #131921;
+}
+
+.nav-signin{
+    width: 131px;
+    height: 50px;
+    align-content: center;
+}
+
+.signin-first{
+    font-size: 0.7rem;
+}
+
+.signin-sec{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.nav-cart {
+    display: flex;
+    width: 84px;
+    height: 50px;
+    /* font-size: 30px; */
+}
+
+.cart-logo{
+    font-size: 30px;
+    align-content: flex-start;
+    margin-top: 6px;
+}
+
+.cart-text{
+    /* width: 35px;
+    height: 39px; */
+    font-size: 1rem;
+    font-weight: 700;
+    align-content:end;
+    margin-bottom: 10px;
+}
+
+.panel{
+    height: 39px;
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.panel-ops p{
+    display: inline;
+   margin-left: 15px;
+   justify-content: start;
+}
+
+.panel-ops{
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.panel-all{
+    width: 50px;
+    margin-right: 150px;
+    font-weight: 700;
+    font-size:medium;
+}
+
+.hero-section{
+    height: 380px;
+    background-image: url(image1.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.hero-msg{
+    background-color: white;
+    height: 40px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 14px;
+    width: 95%;
+    margin-bottom: 20px;
+
+}
+
+.t-d{
+    color: #007185;
+    text-decoration:none;
+}
+
+.t-d:hover{
+    color: brown;
+    text-decoration:underline;
+}
+
+.shop-section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.box1{
+    background-color: rgb(242, 232, 232);
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* display: inline-block; */
+}
+
+.box{
+    background-color: #f3a847;
+    width: 300px;
+    height: 115.85px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seemore{
+    display: flex;
+    text-align: start;
+    align-content: flex-start;
+}
+
+.box2{
+    background-color: rgb(242, 232, 232);
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.box3{
+    background-color: rgb(242, 232, 232);
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cpu-img{
+    height: 280px;
+    width: 320px;
+}
+
+.box4{
+    background-color: rgb(242, 232, 232);
+    width: 360px;
+    height: 420px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.shop-section h2{
+    width: 322px;
+    height: 27px;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: start; */
+    margin: 20px;
+    color: #131921;
+}
+
+.shop-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
